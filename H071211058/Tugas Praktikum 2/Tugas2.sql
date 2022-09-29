@@ -10,7 +10,7 @@ SELECT * FROM orderDetails WHERE quantityOrdered > 70 ORDER BY orderLineNumber
 SELECT DISTINCT productLine FROM products
 
 -- nomor 4 --
-SELECT customerNumber AS `Nomor Customer`, customerName AS `Nama Customer` FROM customers ORDER BY customerNumber AND customerName LIMIT 99,49
+SELECT customerNumber as `Nomor Customer`, customerName as `Nama Customer` FROM customers WHERE customerNumber > 100 and customerNumber < 150
 
 -- nomor 5 --
 SELECT * FROM customers WHERE country!="USA" and creditLimit = 0 ORDER BY customerName ASC Limit 10,10
